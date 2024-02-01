@@ -40,3 +40,8 @@ java/build/**
 
 # Ficheros creados
 *.csv
+
+*.properties
+
+*.png
+*.jpeg

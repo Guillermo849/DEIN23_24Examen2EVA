@@ -1,1 +1,27 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+*{
+	-fx-font-family: "Comic Sans MS";
+	-fx-text-fill: #000000;
+	
+}
+
+BorderPane {
+	-fx-background-color: #B3B3B3;
+}
+
+TableView {
+	-fx-background-color: #757780;
+}
+
+TableColumn {
+	-fx-background-color: #757780;
+}
+
+.table-row-cell {
+	-fx-background-color: #D2CCA1;
+}
+
+.table-row-cell:selected .table-cell {
+	-fx-background-color: #387780;
+	-fx-text-fill: #FFFFFF;
+}

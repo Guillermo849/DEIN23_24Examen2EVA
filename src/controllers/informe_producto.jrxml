@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="informe_producto" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="df013db5-f76e-44d3-b0df-bcbc46d93160">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="e9d2002a-c8ee-4649-a258-640dad29110c"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="109" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="109" uuid="fa7cec56-4ec1-48e6-a26e-7266a995d174"/>
+				<staticText>
+					<reportElement x="20" y="10" width="100" height="19" uuid="ebaa6365-4358-45f4-af40-00272ecaaf7f"/>
+					<text><![CDATA[Cod:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="30" width="100" height="19" uuid="3af41a54-c421-456c-ab17-cc953a890041"/>
+					<text><![CDATA[Nombre:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="50" width="100" height="19" uuid="b04b7ea0-fd77-442f-872a-00eec4c5624f"/>
+					<text><![CDATA[Precio:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="70" width="100" height="19" uuid="39ecdb30-4b64-4caa-b39c-6fe97367391b"/>
+					<text><![CDATA[Disponible:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="130" y="10" width="170" height="19" uuid="ef8b5077-c82e-4dcb-b596-0c8b7fdae7f8"/>
+					<textFieldExpression><![CDATA[$P{cod}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="130" y="30" width="170" height="19" uuid="18b16be4-cb52-4d56-9300-5bbf96f59ee2"/>
+					<textFieldExpression><![CDATA[$P{nomProduc}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="130" y="49" width="170" height="19" uuid="b0707d0e-80cd-4e21-9a1f-2e1892570894"/>
+					<textFieldExpression><![CDATA[$P{precio}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="130" y="70" width="170" height="19" uuid="a87bd0ca-e4f1-4793-9405-b682017f7196"/>
+					<textFieldExpression><![CDATA[$P{disponible}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
